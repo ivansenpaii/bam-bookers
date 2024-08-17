@@ -1,4 +1,4 @@
-module github.com/ankorstore/yokai-http-template
+module github.com/ivansenpaii/bam-bookers
 
 go 1.22
 
