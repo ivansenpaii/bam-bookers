@@ -1,11 +1,11 @@
 ## Multistage build
-FROM golang:1.22 as build
+FROM golang:1.23 as build
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GOARCH=amd64
 
 WORKDIR /src
-COPY . .
+COPY ../.. .
 RUN  go mod download
 RUN go build -o /app
 
